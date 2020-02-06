@@ -1,12 +1,24 @@
 .switch {
   position: relative;
   display: inline-block;
-  width: 60px;
-  height: 34px;
+  width: 30px;
+  height: 17px;
 }
 
 .menu{
-  border: 2px solid black;
+  display: none;
+  border: 1px solid grey;
+  box-shadow: 5px 2px 2px grey;
+  width: 100px;
+  height: 150px;
+}
+
+.table{
+  margin-top: 70px;
+  display: grid;
+  grid-row-gap: 20px;
+  justify-content: center;
+  font-family: geneva;
 }
 
 .switch input {
@@ -15,25 +27,23 @@
   height: 0;
 }
 
-.slider {
+.dots {
   position: absolute;
   cursor: pointer;
-  top: 20px;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  height: 34px;
-  width: 60px;
+  top:35px;
+  left: 70px;
+  height: 17px;
+  width: 30px;
   background-image: url("three-dots-grey.svg");
   background-repeat: no-repeat;
   transition: .4s;
 }
 
-input:checked + .menu {
-  visibility: visible;
+input:checked ~ .menu {
+  display: block;
 }
 
-input:checked + .slider {
+input:checked + .dots {
   background-image: url("three-dots-green.svg");
   background-repeat: no-repeat;
   transform: rotate(-90deg);
