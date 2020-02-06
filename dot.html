@@ -4,24 +4,29 @@
     <meta charset="utf-8">
     <title></title>
     <link rel="stylesheet" href="dot.css">
+    <script src="dot.js"> </script>
   </head>
   <body>
-    <label class="switch">
-      <input type="checkbox">
-      <span class="dots">
-      </span>
-      <div class="menu">
-        <div class="table">
-          <div class="item1">
-            <img width=15 height=15 src="edit.svg"/>
-            Item1
+    <div class="appbar">
+      <div class="left"></div>
+      <div class="middle"></div>
+      <div class="right">
+        <div id="myMenu" class="menu1">
+          <div class="button_div">
+            <button onclick="myFunc()" id="myButton" class="button1"></button>
           </div>
-          <div class="Item2">
-            <img width=15 height=15 src="refresh.svg" />
-            Item2
+          <div id="myDropDown" class="dropdown1">
+            <div>
+              <img width=15 height=15 src="edit.svg">
+              Item1
+            </div>
+            <div>
+              <img width=15 height=15 src="refresh.svg">
+              Item2
+            </div>
           </div>
         </div>
       </div>
-    </label>
+    </div>
   </body>
 </html>

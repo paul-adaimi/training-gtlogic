@@ -1,50 +1,75 @@
-.switch {
-  position: relative;
-  display: inline-block;
-  width: 30px;
-  height: 17px;
+.appbar{
+  display: flex;
+  width: 100%;
+  height: 40px;
+  background-color: yellow;
 }
 
-.menu{
-  display: none;
+.left{
+  flex:1
+}
+
+.middle{
+  flex:1
+}
+
+.right{
+  flex:1;
+  display:flex;
+  justify-content: flex-end;
+}
+
+.menu1{
+  margin-top: 10px;
+  width: 100px;
+  height: 200px;
+}
+
+.menu2{
+  margin-top: 10px;
+  width: 100px;
+  height: 200px;
+  background-color: white;
   border: 1px solid grey;
   box-shadow: 5px 2px 2px grey;
-  width: 100px;
-  height: 150px;
 }
 
-.table{
-  margin-top: 70px;
+.dropdown1{
+  display: none;
+}
+
+.dropdown2{
   display: grid;
-  grid-row-gap: 20px;
+  align-items: center;
   justify-content: center;
-  font-family: geneva;
+  grid-row-gap: 20px;
 }
 
-.switch input {
-  opacity: 0;
-  width: 0;
-  height: 0;
+.button_div{
+  margin-top: 10px;
+  width: 100%;
+  height: 30px;
+  display: flex;
+  justify-content: flex-end;
 }
 
-.dots {
-  position: absolute;
-  cursor: pointer;
-  top:35px;
-  left: 70px;
-  height: 17px;
-  width: 30px;
-  background-image: url("three-dots-grey.svg");
+.button1{
+  margin-right: 10px;
+  width: 20px;
+  height: 10px;
+  background: url("three-dots-grey.svg");
   background-repeat: no-repeat;
-  transition: .4s;
+  transition: 0.4s;
+  border-width: 0px;
 }
 
-input:checked ~ .menu {
-  display: block;
-}
-
-input:checked + .dots {
-  background-image: url("three-dots-green.svg");
+.button2{
+  margin-right: 10px;
+  width: 20px;
+  height: 10px;
+  background: url("three-dots-green.svg");
   background-repeat: no-repeat;
-  transform: rotate(-90deg);
+  transform: rotate(90deg);
+  transition: 0.4s;
+  border-width: 0;
 }
