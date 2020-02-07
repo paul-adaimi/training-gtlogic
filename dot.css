@@ -1,0 +1,50 @@
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 30px;
+  height: 17px;
+}
+
+.menu {
+  display: none;
+  border: 1px solid grey;
+  box-shadow: 5px 2px 2px grey;
+  width: 100px;
+  height: 150px;
+}
+
+.table {
+  margin-top: 70px;
+  display: grid;
+  grid-row-gap: 20px;
+  justify-content: center;
+  font-family: geneva;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.dots {
+  position: absolute;
+  cursor: pointer;
+  top: 35px;
+  left: 70px;
+  height: 17px;
+  width: 30px;
+  background-image: url("three-dots-grey.svg");
+  background-repeat: no-repeat;
+  transition: .4s;
+}
+
+input:checked ~ .menu {
+  display: block;
+}
+
+input:checked + .dots {
+  background-image: url("three-dots-green.svg");
+  background-repeat: no-repeat;
+  transform: rotate(-90deg);
+}
