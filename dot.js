@@ -1,23 +1,18 @@
-let clicked=false;
+(function() {
+  function myFunc() {
+    document.querySelector(".js-my-dropdown").classList.toggle("dropdown1");
+    document.querySelector(".js-my-dropdown").classList.toggle("dropdown2");
 
-function myFunc(){
-  if(!clicked){
-    clicked=true;
-    toggleClassfromId("myButton","button1","button2");
-    toggleClassfromId("myMenu","menu1","menu2");
-    toggleClassfromId("myDropDown","dropdown1","dropdown2");
+    document.querySelector(".js-my-button").classList.toggle("button1");
+    document.querySelector(".js-my-button").classList.toggle("button2");
+
+    document.querySelector(".js-my-menu").classList.toggle("menu1");
+    document.querySelector(".js-my-menu").classList.toggle("menu2");
   }
 
-  else{
-    clicked=false;
-    toggleClassfromId("myButton","button2","button1");
-    toggleClassfromId("myMenu","menu2","menu1");
-    toggleClassfromId("myDropDown","dropdown2","dropdown1");
-  }
+  $(function() {
+    const myButton = document.querySelector(".js-my-button");
+    myButton.addEventListener('click',myFunc,false);
+  });
 
-}
-
-function toggleClassfromId(id,from,to){
-  document.getElementById(id).classList.add(to);
-  document.getElementById(id).classList.remove(from);
-}
+}());
