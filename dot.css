@@ -5,7 +5,7 @@
   height: 17px;
 }
 
-.menu{
+.menu {
   display: none;
   border: 1px solid grey;
   box-shadow: 5px 2px 2px grey;
@@ -13,7 +13,7 @@
   height: 150px;
 }
 
-.table{
+.table {
   margin-top: 70px;
   display: grid;
   grid-row-gap: 20px;
@@ -30,7 +30,7 @@
 .dots {
   position: absolute;
   cursor: pointer;
-  top:35px;
+  top: 35px;
   left: 70px;
   height: 17px;
   width: 30px;
