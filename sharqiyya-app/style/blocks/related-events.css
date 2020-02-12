@@ -1,16 +1,20 @@
 .related-events {
+  background-color: #F0F0F0;
+  border-top:2px solid rgb(0,0,0,0.16);
+}
+
+.related-events__max {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  background-color: #F0F0F0;
+  max-width: 1500px;
   height: 475px;
-  padding-left: 44px;
-  padding-right: 44px;
-  border-top:2px solid rgb(0,0,0,0.16);
+  margin: auto;
 }
 
 .related-events__title {
   display: flex;
+  margin-left: 44px;
   align-items: center;
   font-family: Roboto Slab;
   height: 105px;
@@ -19,6 +23,8 @@
 }
 
 .related-events__list {
+  margin-left: 44px;
+  margin-right: 44px;
   display: flex;
   height: 330px;
   margin-bottom: 40px;

@@ -1,0 +1,22 @@
+.back-bar {
+  width: 100%;
+  max-width: 1500px;
+  margin: auto;
+  height: 50px;
+  display: flex;
+  align-items: center;
+}
+
+.back-bar__back {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 60px;
+  opacity: 0.4;
+  text-transform: uppercase;
+  font-size: 11px;
+}
+
+.back-bar__back-image {
+  margin-right: 5px;
+}

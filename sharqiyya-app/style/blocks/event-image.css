@@ -1,0 +1,8 @@
+.event-image {
+  height: 100%;
+  flex: 1;
+}
+
+.event-image__image {
+  margin-left: 27px;
+}
