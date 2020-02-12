@@ -36,7 +36,7 @@
 }
 
 .event-details__date-right {
-  flex:1;
+  flex:2;
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -168,7 +168,6 @@
 }
 
 .event-details__text {
-  height: 667px;
   padding-top: 16px;
   display: flex;
   flex-direction: column;
@@ -176,11 +175,9 @@
 
 .event-details__text-description {
   margin-top: 21px;
-  height: 488px;
   color: #404040;
   font-family: Roboto Slab;
   font-size: 16px;
-  overflow-y: scroll;
   margin-bottom: 31px;
 }
 

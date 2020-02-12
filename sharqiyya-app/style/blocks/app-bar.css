@@ -1,12 +1,3 @@
-.header{
-  align-self: flex-start;
-  display: flex;
-  flex-direction: column;
-  font-family: Montserrat;
-  width: 100%;
-  height: 118px;
-}
-
 .app-bar{
   display: flex;
   align-items: center;
@@ -60,25 +51,4 @@
   height: 36px;
   border-radius: 5px;
   background-color: #F8A62B;
-}
-
-.back-bar {
-  width: 100%;
-  height: 50px;
-  display: flex;
-  align-items: center;
-}
-
-.back-bar__back {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-left: 60px;
-  opacity: 0.4;
-  text-transform: uppercase;
-  font-size: 11px;
-}
-
-.back-bar__back-image {
-  margin-right: 5px;
 }
