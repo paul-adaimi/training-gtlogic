@@ -7,9 +7,8 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
-  max-width: $max-width;
+  @include maxwidth;
   height: 475px;
-  margin: auto;
 }
 
 .related-events__title {

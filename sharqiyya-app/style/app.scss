@@ -1,5 +1,7 @@
 @import "base";
+@import "global";
 
+@import "mixins/max-width-mixin";
 @import "blocks/header";
 @import "blocks/event-content";
 @import "blocks/related-events";

@@ -1,7 +1,6 @@
 .back-bar {
   width: 100%;
-  max-width: $max-width;
-  margin: auto;
+  @include maxwidth;
   height: 50px;
   display: flex;
   align-items: center;

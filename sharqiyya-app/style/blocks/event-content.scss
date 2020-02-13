@@ -1,6 +1,5 @@
 .event-content {
   display: flex;
-  max-width: $max-width;
-  margin: auto;
+  @include maxwidth;
   height: 100%;
 }

@@ -3,13 +3,12 @@
 }
 
 .app-bar__max {
-  margin: auto;
   display: flex;
   align-items: center;
   font-size: 12px;
   height: 68px;
-  max-width: $max-width;
   background-color: #2E2972;
+  @include maxwidth
 }
 
 .app-bar__left {
