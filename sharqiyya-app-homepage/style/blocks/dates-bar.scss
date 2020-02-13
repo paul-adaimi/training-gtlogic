@@ -1,16 +1,19 @@
 .dates-bar {
+  background-color: #2E2972;
+}
+
+.dates-bar__max {
   display: flex;
   height: 50px;
-  background-color: #2E2972;
   border-top: 1px solid rgba(0,0,0,0.4);
   font-family: Montserrat;
+  @include maxwidth
 }
 
 .dates-bar__left {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-left: 45px;
   margin-right: 25px;
   flex: 3;
 }

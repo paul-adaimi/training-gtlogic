@@ -1,16 +1,22 @@
 .footer {
+  background-color: #262261;
+  @include for-phone-only {
+    display: none;
+  }
+}
+
+.footer__max {
   display: flex;
+  height: 80px;
   color: white;
   font-family: Montserrat;
-  height: 80px;
-  background-color: #262261;
+  @include maxwidth;
 }
 
 .footer__left {
   display: flex;
   align-items: center;
   font-size: 13px;
-  margin-left: 42px;
   flex: 1;
 }
 
@@ -26,6 +32,5 @@
   align-items: center;
   justify-content: flex-end;
   font-size: 12px;
-  margin-right: 42px;
   flex: 1;
 }

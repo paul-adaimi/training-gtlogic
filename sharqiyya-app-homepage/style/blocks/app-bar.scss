@@ -1,17 +1,21 @@
 .app-bar {
+  background-color: #2E2972;
+}
+
+.app-bar__max {
   display: flex;
   align-items: center;
   font-size: 12px;
-  width: 100%;
   height: 68px;
   background-color: #2E2972;
+  @include maxwidth
 }
 
 .app-bar__left {
   flex: 1;
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-between;
   color: white;
 }
 
@@ -25,7 +29,7 @@
 .app-bar__right {
   flex: 1;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
   color: white;
   text-transform: uppercase;
@@ -40,7 +44,7 @@
 
 .app-bar__location {
   padding-bottom: 2px;
-  border-bottom: 1px solid rgb(0,0,0,0.4);
+  border-bottom: 1px solid rgba(0,0,0,0.4);
 }
 
 .app-bar__add-event {
