@@ -1,0 +1,17 @@
+@import "base";
+
+@import "blocks/header";
+@import "blocks/event-content";
+@import "blocks/related-events";
+@import "blocks/footer";
+@import "blocks/app-bar";
+@import "blocks/back-bar";
+@import "blocks/event-details";
+@import "blocks/event-image";
+
+.main-page {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}

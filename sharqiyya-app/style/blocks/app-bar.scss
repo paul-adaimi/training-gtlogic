@@ -8,7 +8,7 @@
   align-items: center;
   font-size: 12px;
   height: 68px;
-  max-width: 1500px;
+  max-width: $max-width;
   background-color: #2E2972;
 }
 
@@ -45,7 +45,7 @@
 
 .app-bar__location {
   padding-bottom: 2px;
-  border-bottom: 1px solid rgb(0,0,0,0.4);
+  border-bottom: 1px solid rgba(0,0,0,0.4);
 }
 
 .app-bar__add-event {
