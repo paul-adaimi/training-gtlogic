@@ -1,5 +1,8 @@
 .footer {
   background-color: #262261;
+  @include for-phone-only {
+    display: none;
+  }
 }
 
 .footer__max {

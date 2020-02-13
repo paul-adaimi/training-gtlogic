@@ -2,6 +2,9 @@
 @import "global";
 
 @import "mixins/max-width-mixin";
+@import "mixins/media-queries-mixin";
+
+@import "blocks/header-phone";
 @import "blocks/header";
 @import "blocks/event-content";
 @import "blocks/related-events";

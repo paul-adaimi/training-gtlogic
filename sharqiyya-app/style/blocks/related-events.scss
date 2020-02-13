@@ -27,6 +27,9 @@
   display: flex;
   height: 330px;
   margin-bottom: 40px;
+  @include for-phone-only {
+    margin: 0 auto;
+  }
 }
 
 .related-events__event {
@@ -37,6 +40,16 @@
   height: 330px;
   background-color: white;
   border-bottom: 2px solid rgba(0,0,0,0.16);
+
+  @include for-phone-only {
+    width: 350px;
+  }
+}
+
+.related-events__event ~ .related-events__event {
+  @include for-phone-only {
+    display: none;
+  }
 }
 
 .related-events__event-image {
@@ -82,4 +95,15 @@
   font-family: Montserrat;
   font-size: 11px;
   color: #9D9D9D;
+}
+
+.related-events__phone-more {
+  display: none;
+  @include for-phone-only {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+  }
 }

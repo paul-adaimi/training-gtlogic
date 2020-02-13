@@ -6,6 +6,10 @@
   margin-bottom: 35px;
   flex: 1;
   border-right: 1px solid #E6E6E6;
+
+  @include for-phone-only {
+    order: 2;
+  }
 }
 
 .event-details__night {
@@ -33,6 +37,10 @@
   display: flex;
   justify-content: flex-end;
   align-items: center;
+
+  @include for-phone-only {
+    flex:1;
+  }
 }
 
 .event-details__date-box {
@@ -96,6 +104,10 @@
   font-weight: bold;
   color: #727272;
   border-bottom: 1px solid #E6E6E6;
+
+  @include for-phone-only {
+    display: none;
+  }
 }
 
 .event-details__dates-saved-heart {

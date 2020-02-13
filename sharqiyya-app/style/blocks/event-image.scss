@@ -1,8 +1,14 @@
 .event-image {
   height: 100%;
   flex: 1;
+  @include for-phone-only {
+    order: 1;
+  }
 }
 
 .event-image__image {
   margin-left: 27px;
+  @include for-phone-only {
+    margin-left: 0px;
+  }
 }
