@@ -9,7 +9,6 @@
 .dates-bar__max {
   display: flex;
   height: 50px;
-  border-top: 1px solid rgba(0,0,0,0.4);
   font-family: Montserrat;
   @include maxwidth
 }
@@ -27,7 +26,7 @@
   align-items: center;
   padding-left: 20px;
   background-color: #100D46;
-  flex: 1;
+  width: 250px;
 
   @include for_phone_only {
     display: none;
@@ -37,6 +36,13 @@
 .dates-bar__arrow {
   @include for-phone-only {
     display: none;
+  }
+}
+
+.dates-bar__arrow-down {
+  display: none;
+  @include for-phone-only {
+    display: inline;
   }
 }
 
@@ -51,6 +57,19 @@
   border-radius: 5px;
   text-transform: uppercase;
 }
+
+@media (max-width: 1400px) {.dates-bar__box21 {display: none;}}
+@media (max-width: 1320px) {.dates-bar__box20 {display: none;}}
+@media (max-width: 1270px) {.dates-bar__box19 {display: none;}}
+@media (max-width: 1200px) {.dates-bar__box18 {display: none;}}
+@media (max-width: 1150px) {.dates-bar__box17 {display: none;}}
+@media (max-width: 1100px) {.dates-bar__box16 {display: none;}}
+@media (max-width: 1030px) {.dates-bar__box15 {display: none;}}
+@media (max-width: 970px) {.dates-bar__box14 {display: none;}}
+@media (max-width: 900px) {.dates-bar__box13 {display: none;}}
+@media (max-width: 830px) {.dates-bar__box12 {display: none;}}
+@media (max-width: 750px) {.dates-bar__box11 {display: none;}}
+@media (max-width: 700px) {.dates-bar__box10 {display: none;}}
 
 .dates-bar__box_month-year {
   background-color: #100D46;

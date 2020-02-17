@@ -1,13 +1,10 @@
 .tags-bar {
   display: flex;
-  justify-content: space-between;
   align-items: center;
   height: 70px;
   font-family: Montserrat;
+  overflow-x: scroll;
   @include maxwidth;
-  @include for_phone_only {
-    overflow-x: scroll;
-  }
 }
 
 .tags-bar__tag {
@@ -22,10 +19,12 @@
   border-radius: 20px;
   padding-left: 15px;
   padding-right: 15px;
-  @include for_phone_only {
-    margin-right: 10px;
-    white-space: nowrap;
-  }
+  margin-right: 10px;
+  white-space: nowrap;
+}
+
+.tags-bar__tag:hover {
+  color: #F8A62B;
 }
 
 .tags-bar__tag_selected {

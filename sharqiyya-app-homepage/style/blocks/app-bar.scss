@@ -1,5 +1,5 @@
 .app-bar {
-  background-color: #2E2972;
+  background-color: #262261;
   @include for-phone-only {
     display: none;
   }
@@ -10,7 +10,7 @@
   align-items: center;
   font-size: 12px;
   height: 68px;
-  background-color: #2E2972;
+  background-color: #262261;
   @include maxwidth
 }
 
@@ -32,17 +32,22 @@
 .app-bar__right {
   flex: 1;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
   color: white;
   text-transform: uppercase;
 }
 
-.app-bar__divide {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  flex:1;
+.app-bar__element:hover {
+  color: #F8A62B;
+}
+
+.app-bar__element-right {
+  margin-right: 35px;
+}
+
+.app-bar__element-left {
+  margin-left: 22px;
 }
 
 .app-bar__location {
@@ -58,4 +63,9 @@
   height: 36px;
   border-radius: 5px;
   background-color: #F8A62B;
+}
+
+.app-bar__add-event:hover {
+  background-color: white;
+  color: #F8A62B;
 }
