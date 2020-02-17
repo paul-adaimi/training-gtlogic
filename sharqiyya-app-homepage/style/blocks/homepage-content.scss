@@ -50,7 +50,7 @@
   background-color: #F8A62B;
 }
 
-.homepage-content__event ~ .homepage-content__event {
+.homepage-content__event ~ .homepage-content__event ~ .homepage-content__event {
   @include for-phone-only {
     display: none;
   }

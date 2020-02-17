@@ -1,5 +1,9 @@
 .dates-bar {
   background-color: #2E2972;
+  @include for_phone_only {
+    overflow-x: scroll;
+    overflow-y: hidden;
+  }
 }
 
 .dates-bar__max {
@@ -24,6 +28,16 @@
   padding-left: 20px;
   background-color: #100D46;
   flex: 1;
+
+  @include for_phone_only {
+    display: none;
+  }
+}
+
+.dates-bar__arrow {
+  @include for-phone-only {
+    display: none;
+  }
 }
 
 .dates-bar__box {
@@ -40,6 +54,9 @@
 
 .dates-bar__box_month-year {
   background-color: #100D46;
+  @include for_phone_only {
+    width: 53px;
+  }
 }
 
 .dates-bar__box_today {
