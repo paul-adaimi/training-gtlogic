@@ -1,7 +1,10 @@
 .header-phone {
   display: none;
-  @include for-phone-only{
+  @include for-phone-only {
     display: flex;
+    position: fixed;
+    width: 100%;
+    top: 0;
     align-items: center;
     font-family: Roboto Slab;
     font-size: 16px;

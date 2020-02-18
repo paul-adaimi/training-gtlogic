@@ -1,9 +1,7 @@
 .dates-bar {
   background-color: #2E2972;
-
-  @include for_phone_only {
-    height: 50px;
-    overflow-y: hidden;
+  @include for-phone-only {
+    margin-top: 55px;
   }
 }
 
@@ -12,9 +10,6 @@
   height: 50px;
   font-family: Montserrat;
   @include maxwidth
-  @include for_phone_only {
-    height: 75px;
-  }
 }
 
 .dates-bar__left {
@@ -26,7 +21,6 @@
 
 .dates-bar__right {
   display: flex;
-  overflow: visible;
   align-items: center;
   padding-left: 20px;
   background-color: #100D46;
@@ -73,13 +67,16 @@
   }
 }
 
-.dates-bar__dates-list {
-  display: flex;
+.dates-bar__hide-scroll {
+  height: 50px;
   overflow: hidden;
+}
 
-  @include for-phone-only{
-    overflow-x: scroll;
-  }
+.dates-bar__dates-list {
+  height: 65px;
+  display: flex;
+  align-items: center;
+  overflow-x: scroll;
 }
 
 .dates-bar__box_today {
