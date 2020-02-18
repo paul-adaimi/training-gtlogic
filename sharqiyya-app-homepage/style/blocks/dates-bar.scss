@@ -72,6 +72,10 @@
 .dates-bar__dates-list {
   display: flex;
   overflow: hidden;
+
+  @include for-phone-only{
+    overflow: scroll;
+  }
 }
 
 .dates-bar__box_today {
