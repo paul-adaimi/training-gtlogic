@@ -1,7 +1,8 @@
 .dates-bar {
   background-color: #2E2972;
+
   @include for_phone_only {
-    overflow-x: scroll;
+    height: 50px;
     overflow-y: hidden;
   }
 }
@@ -11,6 +12,9 @@
   height: 50px;
   font-family: Montserrat;
   @include maxwidth
+  @include for_phone_only {
+    height: 75px;
+  }
 }
 
 .dates-bar__left {
@@ -74,7 +78,7 @@
   overflow: hidden;
 
   @include for-phone-only{
-    overflow: scroll;
+    overflow-x: scroll;
   }
 }
 

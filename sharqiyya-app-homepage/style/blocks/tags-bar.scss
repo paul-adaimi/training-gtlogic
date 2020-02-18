@@ -1,7 +1,7 @@
 .tags-bar {
   display: flex;
   align-items: center;
-  height: 70px;
+  height: 90px;
   font-family: Montserrat;
   overflow-x: scroll;
   @include maxwidth;
@@ -34,4 +34,9 @@
 
 .tags-bar__tag_orange {
   color:#F8A62B;
+}
+
+.tags-bar__hide-scroll {
+  height: 70px;
+  overflow-y: hidden;
 }
