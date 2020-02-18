@@ -17,16 +17,17 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-right: 25px;
-  flex: 3;
+  overflow: hidden;
 }
 
 .dates-bar__right {
   display: flex;
+  overflow: visible;
   align-items: center;
   padding-left: 20px;
   background-color: #100D46;
   width: 250px;
+  flex-shrink: 0;
 
   @include for_phone_only {
     display: none;
@@ -34,6 +35,8 @@
 }
 
 .dates-bar__arrow {
+  padding-left: 20px;
+  padding-right: 20px;
   @include for-phone-only {
     display: none;
   }
@@ -50,6 +53,7 @@
   width: 38px;
   height: 38px;
   color: white;
+  flex-shrink: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -58,24 +62,16 @@
   text-transform: uppercase;
 }
 
-@media (max-width: 1400px) {.dates-bar__box21 {display: none;}}
-@media (max-width: 1320px) {.dates-bar__box20 {display: none;}}
-@media (max-width: 1270px) {.dates-bar__box19 {display: none;}}
-@media (max-width: 1200px) {.dates-bar__box18 {display: none;}}
-@media (max-width: 1150px) {.dates-bar__box17 {display: none;}}
-@media (max-width: 1100px) {.dates-bar__box16 {display: none;}}
-@media (max-width: 1030px) {.dates-bar__box15 {display: none;}}
-@media (max-width: 970px) {.dates-bar__box14 {display: none;}}
-@media (max-width: 900px) {.dates-bar__box13 {display: none;}}
-@media (max-width: 830px) {.dates-bar__box12 {display: none;}}
-@media (max-width: 750px) {.dates-bar__box11 {display: none;}}
-@media (max-width: 700px) {.dates-bar__box10 {display: none;}}
-
 .dates-bar__box_month-year {
   background-color: #100D46;
   @include for_phone_only {
     width: 53px;
   }
+}
+
+.dates-bar__dates-list {
+  display: flex;
+  overflow: hidden;
 }
 
 .dates-bar__box_today {
