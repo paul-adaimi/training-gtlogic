@@ -1,10 +1,17 @@
 .tags-bar {
+  height: 70px;
+  overflow-y: hidden;
+}
+
+.tags-bar__container {
   display: flex;
   align-items: center;
   height: 90px;
   font-family: Montserrat;
   overflow-x: scroll;
   @include maxwidth;
+  padding-bottom: 10px;
+  box-sizing: border-box;
 }
 
 .tags-bar__tag {
@@ -32,11 +39,14 @@
   color: white;
 }
 
+.tags-bar__tag_is-selected:hover {
+  color: #9E9995;
+}
+
 .tags-bar__tag_color_orange {
   color: #F8A62B;
 }
 
-.tags-bar__hide-scroll {
-  height: 70px;
-  overflow-y: hidden;
+.tags-bar__tag_color_orange:hover {
+  color: #9E9995;
 }

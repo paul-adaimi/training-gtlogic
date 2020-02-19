@@ -1,8 +1,5 @@
 .footer {
   background-color: #262261;
-  @include for-phone-only {
-    display: none;
-  }
 }
 
 .footer__max {
@@ -11,28 +8,45 @@
   color: white;
   font-family: Montserrat;
   @include maxwidth;
+  @include for-phone-only {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .footer__left {
+  width: 100%;
   display: flex;
   align-items: center;
   font-size: 13px;
   flex: 1;
   margin-left: 42px;
+  @include for-phone-only {
+    justify-content: center;
+  }
 }
 
 .footer__middle {
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   flex: 1;
+  @include for-phone-only {
+    justify-content: center;
+  }
 }
 
 .footer__right {
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: flex-end;
   font-size: 12px;
   flex: 1;
   margin-right: 42px;
+  @include for-phone-only {
+    justify-content: center;
+    margin-left: 70px;
+  }
 }

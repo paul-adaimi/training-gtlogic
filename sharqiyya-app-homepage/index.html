@@ -27,10 +27,11 @@
             <div class="app-bar__left">
               <img class="app-bar__element-left" src="images/icons/menu.svg" />
               <div class="app-bar__element-left">Today: AUG 09, 2016</div>
-              <a href="browse" class="app-bar__element app-bar__element-left">Browse Events</a>
+              <a href="javascript:void(0)" class="app-bar__element app-bar__element-left">Browse Events</a>
               <div class="app-bar__element-left app-bar__location">
-                <img src="images/icons/location.svg">
-                <a href="link" class="app-bar__element"> Eastern Province</a>
+                <div class="app-bar__location-logo"></div>
+                <!-- <img src="images/icons/location.svg"> -->
+                <a href="javascript:void(0)" class="app-bar__element"> Eastern Province</a>
               </div>
             </div>
 
@@ -39,9 +40,9 @@
             </div>
 
             <div class="app-bar__right">
-              <a href="login" class="app-bar__element app-bar__element-right">Login</a>
-              <input type="button" value="Add Event" class="app-bar__element-right app-bar__add-event"/>
-              <a href="arabic" class="app-bar__element app-bar__element-right">بالعربية</a>
+              <a href="javascript:void(0)" class="app-bar__element app-bar__element-right">Login</a>
+              <button class="app-bar__element-right app-bar__add-event">Add Event</button>
+              <a href="javascript:void(0)" class="app-bar__element app-bar__element-right">بالعربية</a>
             </div>
           </div>
         </div>
@@ -170,40 +171,40 @@
 
             <div class="dates-bar__right">
               <img src="images/icons/search.svg">
-              <div class="dates-bar__search">Search for an event or activity</div>
+              <input type="search" placeholder="Search for an event or activity" class="dates-bar__search" />
             </div>
           </div>
         </div>
       </div>
 
       <div class="homepage">
-        <div class="tags-bar__hide-scroll">
-          <div class="tags-bar">
-            <a href="everything" class="tags-bar__tag tags-bar__tag_is-selected">
+        <div class="tags-bar">
+          <div class="tags-bar__container">
+            <a href="javascript:void(0)" class="tags-bar__tag tags-bar__tag_is-selected">
               Everything
             </a>
-            <a href="halloween" class="tags-bar__tag">
+            <a href="javascript:void(0)" class="tags-bar__tag">
               Halloween Special
             </a>
-            <a href="arts" class="tags-bar__tag">
+            <a href="javascript:void(0)" class="tags-bar__tag">
               Arts & Culture
             </a>
-            <a href="conference" class="tags-bar__tag">
+            <a href="javascript:void(0)" class="tags-bar__tag">
               Conferences & Workshops
             </a>
-            <a href="exhibitions" class="tags-bar__tag">
+            <a href="javascript:void(0)" class="tags-bar__tag">
               Exhibitions
             </a>
-            <a href="sports" class="tags-bar__tag">
+            <a href="javascript:void(0)" class="tags-bar__tag">
               Sports & Outdoor
             </a>
-            <a href="food" class="tags-bar__tag">
+            <a href="javascript:void(0)" class="tags-bar__tag">
               Food & Drinks
             </a>
-            <a href="nightlife" class="tags-bar__tag">
+            <a href="javascript:void(0)" class="tags-bar__tag">
               Nightlife
             </a>
-            <a href="more" class="tags-bar__tag">
+            <a href="javascript:void(0)" class="tags-bar__tag">
               More
             </a>
           </div>
@@ -260,7 +261,7 @@
                 </div>
                 <div class="event-card__timing-and-location">
                   <img class="event-card__icon" src="images/icons/location.svg">
-                  SSalon Beyrouth restaurant, Mohammed Abdel Baki street, Beirut, Lebanon
+                  Salon Beyrouth restaurant, Mohammed Abdel Baki street, Beirut, Lebanon
                 </div>
                 <div class="event-card__tags">
                   <div class="event-card__tag"># Arts & Culture</div>
@@ -541,9 +542,7 @@
           </div>
 
           <div class="homepage-content__see-more">
-            <div class="tags-bar__tag tags-bar__tag_color_orange">
-              See more events (213)
-            </div>
+            <button class="tags-bar__tag tags-bar__tag_color_orange">See more events (213)</button>
           </div>
         </div>
       </div>
